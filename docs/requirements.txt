@@ -1,0 +1,15 @@
+sphinx
+sphinx-rtd-theme
+sphinx-autobuild
+sphinx_autodoc_typehints
+nbsphinx
+jupyter
+anndata 
+numpy 
+torch
+hnswlib
+logging
+scipy
+sklearn
+tensorflow
+deepcell_toolbox
