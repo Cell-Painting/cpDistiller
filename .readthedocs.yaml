@@ -6,5 +6,9 @@ build:
     python: "3.8"
 
 python:
-   install:
-   - requirements: docs/requirements.txt
+  install:
+    - method: pip
+      path: .
+    - method: pip
+      path: ./deepcell_release
+    - requirements: docs/requirements.txt

@@ -15,5 +15,5 @@ deepcell_toolbox
 scanpy
 deepcell_tracking
 spektral
--e ..
--e ../deepcell_release
+# -e ..
+# -e ../deepcell_release
