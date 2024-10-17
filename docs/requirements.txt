@@ -8,8 +8,12 @@ anndata
 numpy 
 torch
 hnswlib
-logging
 scipy
-sklearn
-tensorflow
+scikit-learn
+tensorflow==2.8.0
 deepcell_toolbox
+scanpy
+deepcell_tracking
+spektral
+-e ..
+-e ../deepcell_release
