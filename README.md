@@ -50,7 +50,7 @@ More details could be found in [cpDistiller documents](https://cpdistiller.readt
 ## License
 We used the pre-trained Mesmer for transfer learning. Mesmer is licensed under a Modified Apache License 2.0 for non-commercial, academic use only. See [LICENSE](https://github.com/Cell-Painting/cpDistiller/blob/main/LICENSE-MODIFIED-APACHE-2.0) for full details.
 
-Other parts is licensed under MIT License.
+Other parts are licensed under MIT License.
 
 ## Acknowledgement
 
