@@ -44,6 +44,13 @@ You can install cpDistiller by the following command:
 cd ..
 pip install -e .
 ```
+## Quick Start
+More details could be found in [cpDistiller documents](https://cpdistiller.readthedocs.io/).
+
+## License
+We used the pre-trained Mesmer for transfer learning. Mesmer is licensed under a Modified Apache License 2.0 for non-commercial, academic use only. See [LICENSE](https://github.com/Cell-Painting/cpDistiller/blob/main/LICENSE-MODIFIED-APACHE-2.0) for full details.
+
+Other parts is licensed under MIT License.
 
 ## Acknowledgement
 
