@@ -21,7 +21,7 @@ cd cpDistiller
 
 ### Step2
 
-Create a conda environment, and then activate it as follows in terminal.   
+Create a conda environment, and then activate it as follows in terminal. All software dependencies can be found in `environment.yml`.
 
 ```bash
 conda env create -f environment.yml
@@ -46,7 +46,7 @@ cd ..
 pip install -e .
 ```
 
-Completing all the preceding steps will approximately take 30 to 40 minutes, depending on the user's computer specifications and internet connection speed.
+Our experimental environment includes two 24GB Nvidia 4090 graphics cards and 96 Intel(R) Xeon(R) Gold 783 5318N CPUs @ 2.10GHz. Completing all the preceding steps will approximately take 30 to 40 minutes, depending on the user's computer specifications and internet connection speed.
 
 ## Quick Start
 We will demonstrate the capability of cpDistiller in correcting technical effects by using Cell Painting profiles from cpg0016 as an example. More details could be found in [cpDistiller documents](https://cpdistiller.readthedocs.io/).
@@ -70,7 +70,7 @@ You can utilize the following parameters to customize the processing pathway for
 | ------------ | -----------------------------------------|
 | npz_path     | the path for saving npz files            |
 | illumn_path  | the path for metadata                    |
-| download_path| The path where the images are downloaded |
+| download_path| the path where the images are downloaded |
 | output_path  | the path for saving representations      |
 
 More details could be found in [#feature extraction](https://cpdistiller.readthedocs.io/en/latest/Tutorial/index.html#feature-extraction-with-cpdistiller). 
@@ -99,11 +99,11 @@ More details could be found in [#feature extraction](https://cpdistiller.readthe
     data = cpDistiller.utils.scale_batch(data)   
     ```
 
-    [**scanpy**](https://scanpy.readthedocs.io/en/stable/), a widely-used Python library for single-cell data analysis, offers exceptional support for preprocessing Anndata objects.
+    The [**scanpy**](https://scanpy.readthedocs.io/en/stable/), a widely-used Python library for single-cell data analysis, offers exceptional support for preprocessing Anndata objects.
     `cpDistiller.utils.scale_batch` is used to apply z-score standardization within each batch to mitigate batch effects.
 
 
-### 4. Well position effect correction and Triple effect correction with cpDistiller
+### 4. Well position effect correction and triple effect correction with cpDistiller
 
 * You could train the cpDistiller model as following:
 
