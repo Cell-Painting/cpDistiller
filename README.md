@@ -109,7 +109,7 @@ More details could be found in [#feature extraction](https://cpdistiller.readthe
 
     ```python
     dat = DataSet(data,batch_size,mod)
-    labeled(data,Mnn,Knn,bacth_name_list)
+    labeled(data,Mnn,Knn,technic_name_list)
     cpDistiller =  cpDistiller.main.cpDistiller_Model(dat)
     cpDistiller.train()  
     ```
