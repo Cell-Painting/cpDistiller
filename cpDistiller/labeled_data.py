@@ -72,7 +72,7 @@ def batch_knn(data,
 def labeled(data,
             Mnn: int = 5,
             Knn: int = 10,
-            bacth_name_list: list = ['row','col']):
+            technic_name_list: list = ['row','col']):
     """
     Calculate the knn and the mnn inter and intra technical effects to construct triplets.
     
@@ -87,15 +87,15 @@ def labeled(data,
     Knn: int = 10
         The number of nearest neighbors considered when calculating KNN, default 10.
 
-    batch_name_list: list
-        The list of batch effect labels to be considered when calculating triplets, default ['row','col'].
+    technic_name_list: list
+        The list of technic effect labels to be considered when calculating triplets, default ['row','col'].
             
     """
     matrix_apn =  np.eye(data.shape[0],dtype=bool)
     data.obs['name_num'] = np.arange(data.shape[0])
     sc.tl.pca(data)
     nn_list = []
-    for batch in bacth_name_list:
+    for batch in technic_name_list:
         batch_mnn(data,batch,Mnn,nn_list)
     nn_set = set()
     for set_ in nn_list:
@@ -103,7 +103,7 @@ def labeled(data,
     mnn_num = len(nn_set)
     logging.info('MNN pairs num: {}'.format(mnn_num//2))        
     nn_list = []
-    for batch in bacth_name_list:
+    for batch in technic_name_list:
         batch_knn(data,batch,Knn,nn_list)
     for set_ in nn_list:
         nn_set = nn_set | set_

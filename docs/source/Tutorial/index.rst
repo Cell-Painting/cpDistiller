@@ -28,7 +28,7 @@ Triple effect correction with cpDistiller
 
 cpDistiller could correct triple effects (including batch, row, and column effects) using ``cpDistiller.main.cpDistiller_Model`` by setting ``mod`` to 1.
 
-* `triple effect correction using cpDistiller <batch_row_col/cpDistiller_b_r_c.ipynb>`_
+* `Triple effect correction using cpDistiller <batch_row_col/cpDistiller_b_r_c.ipynb>`_
 
 
 .. toctree::

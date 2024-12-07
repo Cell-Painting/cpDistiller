@@ -377,10 +377,10 @@ dependencies:
       - tzlocal==4.3.1
       - wrapt==1.16.0
       - scikit-image==0.19.3
-      - tensorflow==2.8.0
+      - tensorflow==2.8.1
       - tensorflow_addons==0.16.1
       - spektral==1.0.4
       - ipykernel
-      - protobuf==3.19.0
+      - protobuf==3.20.2
       - deepcell-tracking~=0.6.1
 
